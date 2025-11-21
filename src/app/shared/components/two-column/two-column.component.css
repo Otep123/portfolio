@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 41vw 41vw;
+  padding-top: 1rem;
+  align-items: center;
+  gap: 50px;
+}
+

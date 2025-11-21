@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  /*clip-path: ellipse(200% 100% at 50% 0%);*/
+}
+
+.page-section {
+  margin: auto 5.5rem;
+}

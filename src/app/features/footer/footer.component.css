@@ -1,0 +1,25 @@
+.container {
+  width: 100vw;
+  padding: 150px 5.5rem;
+  background-color: #373a40;
+  color: #EEEEEE;
+}
+
+a {
+  border-style: solid;
+  border-color: #DC5F00;
+  padding: 14px 25px;
+  display: inline-block;
+  margin: 40px 40px 40px 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+  color: inherit;
+
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  background-color: #DC5F00;
+  color: #373a40
+}

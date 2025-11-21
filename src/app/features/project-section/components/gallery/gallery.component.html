@@ -1,0 +1,7 @@
+<div class="scrollable-gallery">
+  <div class="content">
+    @for (repo of GetProjects(); track repo.id) {
+      <app-gallery-item [project]="repo" (click)="OnClick(repo.id)"/>
+    }
+  </div>
+</div>

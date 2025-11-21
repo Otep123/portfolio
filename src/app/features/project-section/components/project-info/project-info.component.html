@@ -1,0 +1,21 @@
+<app-two-column>
+  <div class="content2 text_content">
+    <div appSlideContent [speed]="'very-slow'">
+      <img ngSrc="back.png" width="30" height="30" (click)="onBackButtonClick()">
+    </div>
+    <div appSlideContent [speed]="'fast'">
+      <h1>{{project.name}}</h1>
+    </div>
+    <div appSlideContent [speed]="'medium'">
+      <h2>{{project.language}}</h2>
+    </div>
+    <div appSlideContent [speed]="'slow'">
+      <p>
+        {{project.description}}
+      </p>
+    </div>
+  </div>
+  <div class="content1 image_content">
+    <img ngSrc="{{project.image}}" width="100" height="100"/>
+  </div>
+</app-two-column>

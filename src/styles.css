@@ -1,1 +1,85 @@
+:root {
+  --slide-duration: 0.85s;
+  --slide-translate: 300px;
+}
+
 /* You can add global styles to this file, and also import other style files */
+html {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  background-color: #EEEEEE;
+  color: #373A40;
+  font-size: 24px;
+  letter-spacing: -1.7px;
+  font-style: normal;
+
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 0 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  text-align: left;
+}
+
+.text_content {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.image_content img {
+  object-fit: cover;
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-up-container {
+  overflow: hidden;
+}
+
+.slide-up {
+  display: block;
+  animation: slide-up var(--slide-duration) cubic-bezier(0.65, 0, 0.35, 1) both
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(var(--slide-translate));
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
+
+.slide-up.fast {
+  --slide-duration: 0.45s;
+}
+
+.slide-up.medium {
+  --slide-duration: 0.75s;
+}
+
+.slide-up.slow {
+  --slide-duration: 1.4s;
+}
+
+.slide-up.very-slow {
+  --slide-duration: 1.75s;
+}

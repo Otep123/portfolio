@@ -1,0 +1,40 @@
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), #EEEEEE);
+}
+
+ul {
+  list-style-type: none;
+  margin: 1rem 4rem;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+ul li {
+  padding: 1rem;
+}
+
+ul #icon {
+  margin-right: auto;
+}
+
+ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #373a40;
+  transition: color 0.2s ease-in-out;
+
+  cursor: pointer;
+}
+
+ul li a:hover {
+  color: #DC5F00;
+}

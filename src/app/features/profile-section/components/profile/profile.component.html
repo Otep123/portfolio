@@ -1,0 +1,25 @@
+<app-two-column>
+  <div class="content1 text_content">
+    <div appSlideContent [speed]="'fast'">
+      <h1>
+        Josef Soneja
+        <img ngSrc="lil-ones/monk.gif" width="30" height="37" priority/>
+      </h1>
+    </div>
+    <div appSlideContent [speed]="'medium'">
+      <h2>Software Developer</h2>
+    </div>
+    <div appSlideContent [speed]="'slow'">
+      <p>
+        Hey there! I’m Josef, an avid programmer based in Sault Ste. Marie.
+        I love finding elegant solutions to complex problems!
+      </p>
+    </div>
+    <div appSlideContent [speed]="'very-slow'">
+      <app-links/>
+    </div>
+  </div>
+  <div class="content2 image_content">
+    <img ngSrc="img/profile.png" width="100" height="100" priority/>
+  </div>
+</app-two-column>

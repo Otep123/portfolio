@@ -1,0 +1,16 @@
+<app-two-column>
+  <div class="content1 text_content">
+    <div appSlideContent [speed]="'fast'">
+      <h1>Personal Projects</h1>
+    </div>
+    <div appSlideContent [speed]="'medium'">
+      <p>
+        Some of the projects I've done to either study or demonstrate the things I found interesting!
+      </p>
+    </div>
+  </div>
+  <div class="content2">
+   <app-gallery (selectedProjectEvent)="selectProject($event)" [projects]="projects"/>
+  </div>
+</app-two-column>
+<!--<app-gallery (selectedProjectEvent)="selectProject($event)" [projects]="projects"/>-->
